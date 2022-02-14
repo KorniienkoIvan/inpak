@@ -1,0 +1,100 @@
+section.page_not_found
+    background-image: url('../assets/img/background.svg')
+    position: relative
+    background-size: cover 
+    background-repeat: no-repeat
+    min-height: 100vh
+    padding-top: 39px 
+    padding-bottom: 34px
+    background-position: center
+    +max-screen(1199px)
+        display: flex 
+        justify-content: center
+        flex-direction: column
+    +max-screen(768px)
+        background-image: none 
+        background-color: #E30613
+        padding-bottom: 0
+        padding-top: 23px
+        &::after,
+        &::before 
+            content: ""
+            background-image: url()
+            position: absolute
+        &::after
+            top: calc(50% - 30px)
+            right: 13px 
+            width: 42px 
+            height: 106px 
+            transform: translateY(-50%)
+            background-image: url('../assets/img/right_background_dots.svg')
+            background-repeat: no-repeat
+            background-size: cover
+        &::before 
+            top: calc( 50% + 20px ) 
+            left: 34px 
+            width: 46px 
+            height: 76px
+            transform: translateY(-50%)
+            background-image: url('../assets/img/left_background_dots.svg')
+            background-repeat: no-repeat
+            background-size: contain
+    .left_ribbons
+        width: 375px  
+        position: absolute
+        top: 0
+        left: 0 
+        background-repeat: no-repeat
+        background-size: cover
+        img
+            width: 100%
+        +max-screen(1199px)
+            width: 26%
+        +max-screen(768px)
+            display: none
+    .right_ribbons 
+        width: 256px 
+        position: absolute
+        bottom: 0
+        right: 0
+        background-repeat: no-repeat
+        background-size: cover
+        img
+            width: 100%
+        +max-screen(1199px)
+            width: 17.7%
+        +max-screen(768px)
+            display: none
+    .main_image 
+        display: flex 
+        justify-content: center
+        margin-left: -60px 
+        +max-screen(1199px)
+            img
+                max-width: 45%
+        +max-screen(768px)
+            margin-left: 0
+            img 
+                width: 228px 
+                max-width: 100%
+    .button_wrapper
+        text-align: center
+        .button 
+            background: #fff 
+            color: #E30613
+            padding: 31px 82px 
+            margin-top: 34px 
+            font-family: Montserrat 
+            font-size: 24px 
+            font-weight: 600
+            line-height: 1.2
+            border-radius: 5px
+            +max-screen(992px)
+                font-size: 20px 
+                padding: 18px 42px 
+            +max-screen(768px)
+                font-size: 18px
+                font-family: Gilroy 
+                padding: 14px 23px 15px 
+                border-radius: 10px 
+                margin-top: 52px 

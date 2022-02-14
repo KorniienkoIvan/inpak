@@ -1,0 +1,205 @@
+.blog_wrapper
+    .container 
+        max-width: 1440px
+        padding-right: 40px
+        padding-left: 40px
+        +max-screen(768px)
+            padding-left: 10px
+            padding-right: 10px  
+    & > .container > .row 
+        margin-left: -10px
+        margin-right: -10px
+    .post
+        display: flex
+        border-radius: 20px
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+        padding: 12px 21px
+        padding-right: 58px
+        +max-screen(768px) 
+            padding: 26px 16px 23px 17px
+        &_image 
+            img
+                max-width: 240px
+                object-fit: cover
+                height: 100%
+                display: block
+                margin-left: auto 
+                margin-right: auto
+                box-sizing: content-box
+                +max-screen(1200px)
+                    object-fit: contain
+                    object-position: top
+                +max-screen(991px)
+                    +min-screen(769px)
+                        object-fit: cover
+                +max-screen(768px)
+                    max-width: 102px 
+                    margin-top: 3px
+        &_title 
+            color: #4f4f4f
+            margin-bottom: 20px
+            +max-screen(768px)
+                font-size: 14px
+                margin-bottom: 9px
+        &_desc
+            color: #828282
+            font-size: 16px
+            margin-bottom: 18px
+            font-weight: 500
+            +max-screen(768px)
+                &,
+                & p
+                    font-size: 12px
+                    margin-bottom: 15px
+                    line-height: 1.4
+        &_body 
+            padding-left: 17px
+            box-sizing: content-box
+            +max-screen(768px)
+                padding-left: 6px
+        &_read_more_wrapper
+            text-align: right
+            margin-bottom: 7px
+
+            a 
+                position: relative
+                color: #E30613
+                font-size: 20px
+                font-weight: 600
+                display: inline-block
+                &::after 
+                    width: 100% 
+                    content: ""
+                    height: 1px 
+                    background: #E30613
+                    bottom: -4px
+                    left: 0
+                    position: absolute
+            +max-screen(768px)
+                text-align: left
+                a 
+                    font-size: 16px
+        &s_block
+            padding-left: 10px
+            padding-right: 10px
+            margin-bottom: 20px
+            &_wrapper
+                &:nth-of-type(2)
+                    .posts_block.one 
+                        order: -1
+            &.two 
+                display: flex 
+                flex-direction: column 
+                min-height: 100%
+                .post 
+                    &_title 
+                        margin-top: 12px 
+                        +max-screen(768px)
+                            margin-top: 0
+                    &:first-child
+                        margin-bottom: 10px 
+                        min-height: 50%
+                    &:last-child
+                        margin-top: 10px
+                        height: 100%
+            &.one
+                .post 
+                    height: 100%
+                    flex-direction: column
+                    padding: 11px 0 20px 
+                    +max-screen(991px)
+                        flex-direction: row
+                        padding: 12px 21px
+                        padding-right: 58px
+                    +max-screen(768px) 
+                        padding: 26px 16px 23px 17px
+                    &_body 
+                        max-width: 447px
+                        margin-left: auto
+                        margin-right: auto 
+                        padding-left: 40px
+                        +min-screen(992px)
+                            padding-right: 32px
+                        +max-screen(991px)
+                            max-width: 100%
+                            padding-left: 17px
+                        +max-screen(768px)
+                            padding-left: 6px
+                    &_image 
+                        margin-bottom: 11px 
+                        img
+                            object-fit: cover
+                            max-width: 375px 
+                            width: 100%
+                            padding-right: 25.75px
+                            +max-screen(991px)
+                                width: auto
+                                max-width: 240px
+                                padding-right: 0
+                            +max-screen(768px)
+                                max-width: 102px 
+                                margin-top: 3px
+                                object-fit: contain
+                                object-position: top
+                                padding-right: 0
+    .pagination 
+        margin-top: 30px 
+        margin-bottom: 38px
+        width: 100%
+        .nav-links
+            display: flex 
+            justify-content: center
+        a,
+        span
+            width: 50px 
+            height: 50px 
+            color: #fff 
+            font-size: 20px
+            font-weight: 600
+            background: #F44336
+            border: 1px solid #F44336
+            display: block
+            border-radius: 5px
+            margin-right: 15px 
+            display: flex 
+            justify-content: center 
+            align-items: center
+            &:last-child
+                margin-right: 0
+            +max-screen(768px)
+                width: 30px 
+                height: 30px
+                margin-right: 10px
+        a
+            color: #F44336 
+            background: #fff
+            &.next,
+            &.prev
+                border: 0
+                width: 15px
+                height: 30px
+                background-image: url(../assets/img/shop_page_arrow.svg)
+                padding: 0
+                background-repeat: no-repeat
+                background-size: contain
+                font-size: 0
+                margin-left: 10px
+                margin-top: auto
+                margin-bottom: auto
+                +max-screen(768px)
+                    width: 10px 
+                    height: 17px 
+                    margin-left: 0
+            &.prev 
+                transform: rotate(-180deg)
+.blog 
+    .katalog.categories_page_title__wrapper .container .katalog-page-title h2 
+        +max-screen(991px)
+            margin-left: 52px
+        +max-screen(768px)
+            margin-left: 34px 
+    .katalog.categories_page_title__wrapper .container .katalog-page-title .background-title
+        +max-screen(991px)
+            margin-left: 32px
+        +max-screen(768px)
+            margin-left: 19px 

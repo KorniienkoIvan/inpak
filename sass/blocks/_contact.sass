@@ -1,0 +1,244 @@
+.contact
+    position: relative
+    margin-bottom: 39px
+    margin-top: -35px
+    &_page_top
+        .titlePseudo
+            left: -53px
+    &__title
+        color: #E30613
+        font-family: "Days One"
+        margin-bottom: 34px
+        z-index: 5
+        margin-left: -7px
+        &Pseudo
+            position: absolute
+            top: -66px
+            left: -45px
+            font-family: "Days One"
+            font-size: 100px
+            line-height: 140%
+            color: #E0E0E0
+            opacity: 0.4
+            z-index: 1
+    &__item
+        display: flex
+        margin-bottom: 40px
+        &__loc
+            margin-bottom: 50px
+            padding-left: 15px 
+            padding-right: 15px 
+        &Icon
+            background: #E30613
+            height: 50px
+            width: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+        &Content
+            font-size: 18px 
+            line-height: 1.6 
+            color: #333333
+            padding-left: 27px
+            p
+                font-size: 18px 
+                line-height: 1.6 
+                color: #333333
+
+        &Wrapper
+    &__form
+        background: #FFFFFF
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        max-height: 450px
+        max-width: 451px
+        padding: 30px 24px
+        margin-top: -120px
+        p
+            font-family: Gilroy
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 140%
+            color: #333333
+        &Wrapper
+            display: flex
+            align-items: flex-end
+            flex-direction: column
+            justify-self: end
+            padding-right: 0
+
+        &Title
+            font-size: 23px
+            line-height: 140%
+            color: #333333
+.contact__itemContentNOICON
+    padding-left: 92px
+    p
+        font-size: 16px 
+.contact__itemContent_location
+    width: 80%
+    font-size: 18px
+    line-height: 1.6
+    color: #333333
+    padding-left: 27px
+.contact__content__wrapper
+    max-width: 1440px
+    position: relative
+    padding-top: 66px
+    margin-right: auto
+    padding-right: 94px
+    margin-left: auto
+    z-index: 1
+    padding-left: 49px 
+.contact__form
+    position: relative
+    padding-bottom: 39px
+    margin-right: 18px
+    &Inner 
+        display: flex
+        align-items: center
+        text-align: center
+        flex-direction: column
+        margin-top: 27px
+        font-size: 0
+    &Name
+        border-radius: 10px
+        border: 1px solid #E5E5E5
+        height: 43px
+        font-size: 14px
+        width: 353px
+        padding-left: 13px
+        font-family: Gilroy
+        margin-bottom: 13px
+    &Message
+        border-radius: 10px
+        border: 1px solid #E5E5E5
+        height: 112px
+        font-size: 14px
+        padding-top: 7px
+        padding-left: 13px
+        width: 353px
+        font-family: Gilroy
+        margin-bottom: 33px
+        &Wrapper
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            height: 100%
+.breadcrumbs
+    margin-bottom: 20px
+.contact__itemContentNOICON__wrapper
+    margin-bottom: 0
+.contact__formInner .contact__formButtonWrapper .button, input[type=submit]
+    padding: 6px 31px 
+    width: 160px 
+    background: #E30613 
+    border-radius: 5px 
+    height: 40px
+    font-family: Gilroy
+    font-size: 20px 
+    font-weight: 600 
+    color: white
+    border: none
+.contact__formButtonWrapper
+    display: flex
+    flex-direction: column
+@media(max-width: 1199px)
+    @media(min-width:993px)
+        .contact
+            &__content__wrapper
+                padding-left: 30px 
+                padding-right: 30px
+                .contact_page_top
+                    .titlePseudo
+                        font-size: 68px
+                        left: 5px 
+                        top: 30px 
+                .contact__itemWrapper
+                    .contact__item
+                        .contact__itemContent
+                            * 
+                                font-size: 16px
+                        &.contact__item__loc
+                            .contact__itemContent_location
+                                font-size: 16px
+                .contact__formWrapper
+                    .contact__form
+                        textarea 
+                            font-family: Gilroy
+                            font-weight: 500
+                        p
+                            font-size: 18px
+                        .popup_title
+                            font-size: 16px
+@media(max-width: 992px)
+    .contact
+        &__content__wrapper
+            padding-left: 21px 
+            padding-right: 21px
+            padding-top: 29px
+            .contact__itemWrapper
+                .contact__item
+                    margin-bottom: 20px
+                    .contact__itemIcon
+                        width: 30px 
+                        height: 30px 
+                        svg
+                            width: 15px  
+                            height: 15px  
+                    .contact__itemContent
+                        padding-left: 8px 
+                        * 
+                            font-size: 12px
+                    &.contact__item__loc
+                        margin-bottom: 17px 
+                        .contact__itemContent_location
+                            font-size: 12px
+                            padding-left: 8px
+                    &.contact__itemContentNOICON__wrapper
+                        margin-bottom: 0
+                        .contact__itemContentNOICON
+                            padding-left: 21px 
+                            p
+                                font-size: 12px 
+                                line-height: 1.85
+                                display: block
+@media(max-width:768px)
+    .contact
+        margin-top: 0
+        margin-bottom: 29px
+        &__formWrapper
+            display: none
+
+.contactPage__formName
+    background: #FFFFFF
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    border-radius: 10px
+    height: 43px
+    padding: 7px 13px 
+    font-size: 14px
+    line-height: 30px
+    color: #BDBDBD
+    margin-bottom: 13px
+    width: 338px !important
+.contactPage__formArea
+    background: #FFFFFF
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    border-radius: 10px
+    font-size: 14px
+    line-height: 30px
+    color: #BDBDBD
+    margin-bottom: 13px
+    height: 112px
+    padding: 7px 13px 
+    max-width: 338px !important
+.contactPage__formWrapper
+    margin-top: 27px
+    text-align: center
+    .ajax-loader
+        position: absolute

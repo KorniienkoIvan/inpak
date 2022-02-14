@@ -1,0 +1,159 @@
+.promo
+    overflow-x: hidden
+    .container:not(.titlePseudo--container)
+        max-width: 1268px
+        padding-left: 28px 
+    &__content__wrapper
+        max-width: 1440px
+        position: relative
+        padding-top: 71px
+        margin-right: auto
+        margin-left: auto
+        +max-screen(768px)
+            padding-top: 0
+    &__title
+        color: #E30613
+        margin-bottom: 70px
+        margin-left: 29px
+        +max-screen(768px)
+            margin-bottom: 21px 
+    &__item   
+        background: #FDD087
+        border-radius: 20px
+        padding: 25px 15px
+        padding-bottom: 11px
+        margin-bottom: 18px
+        @media only screen and (max-width: 991px)
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+        &__wrapper
+            padding-right: 9px
+            &:nth-child(2n)
+                padding-left: 9px
+                padding-right: 15px
+        &__title 
+            font-family: Days One
+            font-style: normal
+            font-weight: normal
+            font-size: 72px
+            line-height: 140%
+            color: #FAFAFA
+        &__content 
+            margin-bottom: 62px
+            * 
+                color: #FAFAFA
+        &__second 
+            background: #FFBC00
+            margin-bottom: 0
+            @media only screen and (max-width: 991px)
+                margin-bottom: 20px
+        &__big 
+            background: #34A853
+            border-radius: 20px
+            padding: 25px 15px
+            padding-bottom: 11px            
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+        &__content__big 
+            font-family: Days One
+            font-style: normal
+            font-weight: normal
+            font-size: 36px
+            line-height: 140%
+            color: #FAFAFA
+        +max-screen(768px)
+            padding-top: 23px 
+            padding-left: 24px
+            padding-right: 12px 
+            margin-bottom: 12px 
+            &__content 
+                margin-bottom: 0
+                max-width: 180px 
+                h1 
+                    font-size: 24px
+                    margin-bottom: 0
+                h2
+                    font-size: 18px 
+            .promo__btn
+                font-size: 12px
+                margin-left: auto 
+                padding-bottom: 4px 
+                &::before 
+                    width: 100% 
+                    top: auto 
+                    bottom: 0px  
+                    height: 1px 
+    &__btn 
+        font-family: Gilroy
+        font-weight: bold
+        font-size: 16px
+        color: #FAFAFA
+        text-align: end
+        position: relative
+        text-decoration: none
+        display: block    
+        color: #FAFAFA
+        text-decoration: none
+    &__btn:hover
+        color: #FAFAFA
+    .--container
+        .promo__title
+            max-width: 1268px 
+            padding-left: 60px
+            margin-left: auto 
+            margin-right: auto
+.promo__btn::before 
+    content: ''
+    width: 88px
+    height: 2px
+    border-bottom: 2px solid #FAFAFA
+    position: absolute
+    top: 22px
+.col-lg-5.promo__item__wrapper
+    +max-screen($breakpoint-lg)
+        margin-top: 0 !important
+.promo__content__wrapper
+     .button, .woocommerce .button, .woocommerce a.button, .woocommerce button[type=submit], .woocommerce input[type=submit], button
+        display: inline-block
+        padding: 0
+        background: #fff
+        border-radius: 50%
+        text-align: center
+        text-decoration: none
+        color: #fff
+        line-height: 1.4
+        width: 10px
+        font-size: 0
+        height: 10px
+        border: 1px solid #e30613
+.promo__content__wrapper  
+    .promo_row
+        +max-screen($breakpoint-md)
+            display: block
+.promo__content__wrapper
+    .slick-track
+        display: flex
+.promo__content__wrapper  
+    .slick-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+        max-width: 60px
+        margin-left: auto
+        margin-right: auto  
+        li
+            padding-right: 10px    
+        .slick-active
+            button
+                background: #e30613
+.promo__content__wrapper
+    .slick-arrow
+        display: none !important
+.promo__item__wrapper
+    +max-screen($breakpoint-md)
+        margin-top: 0 !important
+        height: fit-content

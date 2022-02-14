@@ -1,0 +1,131 @@
+.advantages
+    margin-bottom: 50px
+    &__title 
+        color: #333333
+        margin-bottom: 57px
+        +max-screen($breakpoint-xl)
+            text-align: center
+        +max-screen(768px)
+            font-size: 22px 
+            margin-bottom: 20px 
+            margin-left: 4px
+            text-align: left
+            max-width: 180px 
+    .catalog__btn
+        +max-screen(768px)
+            padding: 0
+            display: block
+            a
+                background: #E30613
+                width: 200px 
+                height: 50px 
+                color: #fff
+                display: block
+                border-radius: 10px 
+                margin-left: auto 
+                margin-right: auto
+                +max-screen(768px)
+                    height: auto 
+                    padding: 20px
+                &::before,
+                &:after 
+                    content: none
+    &__item 
+        border: 1.5px solid #32BA7C
+        box-sizing: border-box
+        border-radius: 20px
+        padding: 15px 20px
+        height: 120px
+        margin-bottom: 30px
+        width: 315px
+        max-width: 100%
+        position: relative
+        +max-screen($breakpoint-xl)
+            border: none
+            width: fit-content
+            margin-bottom: 0
+            height: 100%
+        +max-screen(1200px)
+            width: 100%
+            max-width: 440px
+        &Title 
+            color: #34A853
+        &__content 
+            font-family: Gilroy
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 140%
+            color: #333333
+        &__big
+            margin-bottom: 30px
+            max-width: 440px
+            height: 420px
+            background: #34A853
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+            border-radius: 20px
+            padding-left: 75px
+            padding-right: 75px
+            display: flex
+            justify-content: center
+            flex-direction: column
+            position: relative
+            @media only screen and (max-width: 450px)
+                padding-left: 30px
+                padding-right: 30px
+            @media only screen and (max-width: 375px)
+                padding-left: 10px
+                padding-right: 10px
+            &__title 
+                max-width: 291px
+                color: #FAFAFA
+                margin-bottom: 26px
+            &__content 
+                color: #FAFAFA
+                width: 277px
+    &__row 
+        justify-content: flex-start
+.advantages__itemWrapper
+    +max-screen($breakpoint-xl)
+        display: flex
+        align-items: center
+        flex-direction: column
+.advantages__item__big__wrapper
+    +max-screen($breakpoint-xl)
+        display: flex
+        align-items: center
+        flex-direction: column
+        order: -1
+.advantages__item__big
+    +max-screen($breakpoint-xl)
+        padding: 6px 12px
+        width: 100%
+        height: fit-content
+        border-radius: 10px
+        margin-bottom: 15px
+    &__title
+        +max-screen($breakpoint-xl)
+            margin-bottom: 5px
+            font-size: 18px
+.advantages__item
+    &::before
+        content: " "
+        width: 5px
+        height: 5px
+        background: #34A853
+        position: absolute
+        transform: rotate(45deg)
+        top: 27px
+        left: 5px
+        +min-screen($breakpoint-xl)
+            display: none
+    &::after
+        content: " "
+        position: absolute
+        width: 2px
+        border-left: 1px dotted #34A853
+        height: 102%
+        left: 7px
+        top: -50px
+        +min-screen($breakpoint-xl)
+            display: none

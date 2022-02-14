@@ -1,0 +1,74 @@
+.heroBanner
+    display: flex
+    &__text
+        margin-bottom: 40px
+        &Wrapper
+            width: 51%
+            background: #E30613
+            display: flex
+            align-items: center
+            padding-right: 97px
+            padding-left: 32px
+            padding-bottom: 30px
+            position: relative
+            .slick-prev,.slick-next
+                position: absolute
+                width: 38px
+                height: 46px
+                cursor: pointer
+                background-image: url('../assets/img/slick-arrow-hero.png')
+            .slick-next
+                bottom: 33px
+                right: 32px
+            .slick-prev
+                bottom: 33px
+                right: 78px
+                transform: rotate(180deg)
+            h1
+                color: #fff
+            p
+                color: #fff
+        &Inner
+            max-width: 575px
+            margin-left: auto
+            margin-right: 0
+    &__sliderWrapper
+        width: 49%
+        overflow: hidden
+        img
+            height: 100%
+            object-fit: cover
+            object-position: center
+    .button
+        background: #fafafa
+        color: #E30613
+    .slick-list,.slick-track
+        height: 100%
+
++max-screen($breakpoint-md)
+    .heroBanner
+        flex-direction: column-reverse
+        &__sliderWrapper
+            width: 100%
+            height: 475px
+        &__text
+            &Wrapper
+                width: 85%
+                margin-top: -204px
+                z-index: 2
+                padding: 20px 13px 40px 14px 
+                h1
+                    font-size: 25px
+                p
+                    font-size: 11px
+                .slick-prev,.slick-next
+                    display: none !important
+            &Inner
+                max-width: 100%
+                margin-left: 0
+        
+
+        
+            
+
+        
