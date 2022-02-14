@@ -124,7 +124,6 @@
 <?php 
 global $current_user;
 get_currentuserinfo();
-
 ?>
 <script>
 	jQuery(document).ready(function(){
@@ -139,6 +138,7 @@ get_currentuserinfo();
 
 	jQuery(document).ready(function(){
 		jQuery('.contact_form_wrapper input[type="email"]').attr('value', '<?php echo $current_user->user_email; ?>');
+		jQuery('.contact_form_wrapper input[type="text"]').attr('value', '<?php echo $current_user->user_firstname . ' ' . $current_user->user_lastname; ?>');
 	});
 </script>
 </html>
