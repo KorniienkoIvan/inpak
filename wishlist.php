@@ -57,7 +57,7 @@ elseif(get_locale() == 'ru_RU'){
                         <?php endif; ?>
                         <?php $i++; ?>
                     <?php endforeach; ?>
-                    
+                    <li><a href="<?php echo wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) ?>">Вихід</a></li>
                 </ul>
             </nav>
             <div class="wishlist">
